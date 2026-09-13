@@ -1,4 +1,15 @@
+:root {
+    --main-color: blue;
+}
+* {
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+}
 .container {
     display: flex;
     justify-content: center;
+}
+.container > h1 {
+    color: var(--main-color);
+    font-weight: bolder;
 }
