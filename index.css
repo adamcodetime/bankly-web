@@ -1,5 +1,6 @@
 :root {
-    --main-color: blue;
+    --main-color: #A1B5B8;
+    --hr-color: #bbb;
 }
 * {
     font-family: "Caveat", cursive;
@@ -7,9 +8,31 @@
 }
 .container {
     display: flex;
-    justify-content: center;
+    justify-content: left;
 }
 .container > h1 {
     color: var(--main-color);
     font-weight: bolder;
+    font-size: 64px;
+}
+
+/* Dashed border */
+hr.dashed {
+    border-top: 3px dashed var(--hr-color);
+}
+
+/* Dotted border */
+hr.dotted {
+    border-top: 3px dotted var(--hr-color);
+}
+
+/* Solid border */
+hr.solid {
+    border-top: 3px solid var(--hr-color);
+}
+
+/* Rounded border */
+hr.rounded {
+    border-top: 8px solid var(--hr-color);
+    border-radius: 5px;
 }
